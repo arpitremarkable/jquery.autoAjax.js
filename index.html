@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="autoajax.js">
+</script>
+<script>
+$(document).ready(function(){
+  $('a:first').autoAjax();
+  $('a:last').autoAjax();
+});
+</script>
+</head>
+<body>
+
+<a href="index.html" data-ajax='POST' data-ajaxdatatype='html' data-ajaxparams='indexparams'>Click here</a>
+
+<a href="autoajax.js" data-ajax='POST' data-ajaxdatatype='script' data-ajaxparams='{"data": {"something": "answer"}}'>Here too</a>
+
+</body>
+</html>
